@@ -1,11 +1,8 @@
-//
-//  ViewController.swift
-//  SlotMachine
-//
-//  Created by YASH SOMPURA on 2018-01-26.
-//  Copyright © 2018 YASH SOMPURA. All rights reserved.
-//
-
+// Project Name: Slot Machine
+// Developed By: Yashkumar Sompura - 300967186
+//               Kshitij Suthar -
+// Description: Advance iOS Programming Assignment 1
+// Version: 0.0.1
 import UIKit
 
 class ViewController: UIViewController {
