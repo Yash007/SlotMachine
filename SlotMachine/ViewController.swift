@@ -7,12 +7,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var jackpotValue = 5000
-    var cashValue = 200
+    var jackpotValue = 5700
+    var cashValue = 100
     
     @IBOutlet weak var quitButton: UIButton!
     @IBOutlet weak var jackpotLabel: UILabel!
     @IBOutlet weak var cashLabel: UILabel!
+    @IBOutlet weak var resetButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,14 @@ class ViewController: UIViewController {
     
     @IBAction func quitButtonAction(_ sender: UIButton) {
         exit(0);
+    }
+    
+    
+    @IBAction func resetButtonAction(_ sender: UIButton) {
+        jackpotValue = 5000
+        cashValue = 200
+        jackpotLabel.text = String(jackpotValue)
+        cashLabel.text = String(cashValue)
     }
     
     

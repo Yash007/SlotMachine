@@ -67,6 +67,9 @@
                                 <rect key="frame" x="19" y="519" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="reset"/>
+                                <connections>
+                                    <action selector="resetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGf-0n-v4d"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfd-Di-ow8">
                                 <rect key="frame" x="221" y="49" width="95" height="43"/>
@@ -90,6 +93,7 @@
                         <outlet property="cashLabel" destination="0WR-oS-qZG" id="ZXj-Ld-5Wj"/>
                         <outlet property="jackpotLabel" destination="Pfd-Di-ow8" id="uUt-Oo-SWP"/>
                         <outlet property="quitButton" destination="FBE-H6-QXS" id="yHp-q2-hhe"/>
+                        <outlet property="resetButton" destination="Nym-Ur-Wab" id="C0i-47-PH1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
