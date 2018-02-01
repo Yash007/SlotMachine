@@ -76,15 +76,15 @@ class ViewController: UIViewController {
         
         var fileRes : String
         
-        firstRandomNumber = Int(arc4random_uniform(16) + 1)
+        firstRandomNumber = Int(arc4random_uniform(32) + 1)
         fileRes = String(firstRandomNumber)
         self.firstCard.image = UIImage(named: fileRes)
         
-        secondRandomNumber = Int(arc4random_uniform(16) + 1)
+        secondRandomNumber = Int(arc4random_uniform(32) + 1)
         fileRes = String(secondRandomNumber)
         self.secondCard.image = UIImage(named: fileRes)
         
-        thirdRandomNumber = Int(arc4random_uniform(16) + 1)
+        thirdRandomNumber = Int(arc4random_uniform(32) + 1)
         fileRes = String(thirdRandomNumber)
         self.thirdCard.image = UIImage(named: fileRes)
         
@@ -124,6 +124,42 @@ class ViewController: UIViewController {
         if kingResult.contains(thirdRandomNumber)   {
             king += 1
         }
+        if sevenResult.contains(firstRandomNumber)    {
+            seven += 1
+        }
+        if sevenResult.contains(secondRandomNumber)   {
+            seven += 1
+        }
+        if sevenResult.contains(thirdRandomNumber)   {
+            seven += 1
+        }
+        if eightResult.contains(firstRandomNumber)  {
+            eight += 1
+        }
+        if eightResult.contains(secondRandomNumber)   {
+            eight += 1
+        }
+        if eightResult.contains(thirdRandomNumber)   {
+            eight += 1
+        }
+        if nineResult.contains(firstRandomNumber)  {
+            nine += 1
+        }
+        if nineResult.contains(secondRandomNumber)   {
+            nine += 1
+        }
+        if nineResult.contains(thirdRandomNumber)   {
+            nine += 1
+        }
+        if tenResult.contains(firstRandomNumber)  {
+            ten += 1
+        }
+        if tenResult.contains(secondRandomNumber)   {
+            ten += 1
+        }
+        if tenResult.contains(thirdRandomNumber)   {
+            ten += 1
+        }
         
         
         if ace == 3 {
@@ -142,6 +178,22 @@ class ViewController: UIViewController {
             cashValue += 40
             cashLabel.text = String(cashValue)
         }
+        else if seven == 3 {
+            cashValue += 15
+            cashLabel.text = String(cashValue)
+        }
+        else if eight == 3   {
+            cashValue += 15
+            cashLabel.text = String(cashValue)
+        }
+        else if nine == 3   {
+            cashValue += 15
+            cashLabel.text = String(cashValue)
+        }
+        else if ten == 3   {
+            cashValue += 15
+            cashLabel.text = String(cashValue)
+        }
         else if ace == 2    {
             cashValue += 20
             cashLabel.text = String(cashValue)
@@ -158,18 +210,43 @@ class ViewController: UIViewController {
             cashValue += 15
             cashLabel.text = String(cashValue)
         }
-        else    {
+        else if seven == 2   {
+            cashValue += 10
+            cashLabel.text = String(cashValue)
+        }
+        else if ten == 2   {
+            cashValue += 10
+            cashLabel.text = String(cashValue)
+        }
+        else if eight == 2   {
+            cashValue += 10
+            cashLabel.text = String(cashValue)
+        }
+        else if nine == 2   {
+            cashValue += 10
+            cashLabel.text = String(cashValue)
+        }
+        else   {
             cashValue -= 10
             cashLabel.text = String(cashValue)
         }
+        
         print(ace)
         print(jack)
         print(queen)
         print(king)
+        print(seven)
+        print(eight)
+        print(nine)
+        print(ten)
         ace = 0
         jack = 0
         queen = 0
         king = 0
+        seven = 0
+        eight = 0
+        nine = 0
+        ten = 0
         
     }
     
