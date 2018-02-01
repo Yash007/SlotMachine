@@ -1,6 +1,6 @@
 // Project Name: Slot Machine
 // Developed By: Yashkumar Sompura - 300967186
-//               Kshitij Suthar -
+//               Kshitij Suthar - 300971838
 // Description: Advance iOS Programming Assignment 1
 // Version: 0.0.1
 import UIKit
@@ -229,6 +229,8 @@ class ViewController: UIViewController {
         else   {
             cashValue -= 10
             cashLabel.text = String(cashValue)
+            jackpotValue += 10
+            jackpotLabel.text = String(jackpotValue)
         }
         
         print(ace)
