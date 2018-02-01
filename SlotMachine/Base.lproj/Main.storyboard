@@ -53,6 +53,9 @@
                                 <rect key="frame" x="58" y="414" width="258" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="spin"/>
+                                <connections>
+                                    <action selector="spinButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w6Y-Ua-0be"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBE-H6-QXS">
                                 <rect key="frame" x="276" y="519" width="80" height="80"/>
@@ -91,9 +94,12 @@
                     </view>
                     <connections>
                         <outlet property="cashLabel" destination="0WR-oS-qZG" id="ZXj-Ld-5Wj"/>
+                        <outlet property="firstCard" destination="CoN-oG-SKm" id="Ai3-af-KD2"/>
                         <outlet property="jackpotLabel" destination="Pfd-Di-ow8" id="uUt-Oo-SWP"/>
                         <outlet property="quitButton" destination="FBE-H6-QXS" id="yHp-q2-hhe"/>
                         <outlet property="resetButton" destination="Nym-Ur-Wab" id="C0i-47-PH1"/>
+                        <outlet property="secondCard" destination="6cn-wk-JRd" id="VU7-hx-79H"/>
+                        <outlet property="thirdCard" destination="ot2-lR-TeW" id="4lt-v7-DMT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
