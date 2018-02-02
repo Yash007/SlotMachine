@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var firstCard: UIImageView!
     @IBOutlet weak var secondCard: UIImageView!
     @IBOutlet weak var thirdCard: UIImageView!
+    @IBOutlet weak var resultImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +43,14 @@ class ViewController: UIViewController {
         
         jackpotLabel.text = String(jackpotValue)
         cashLabel.text = String(cashValue)
+        
+        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(onTimerEvent(timer:)), userInfo: nil, repeats: true)
     }
+    
+    @objc func onTimerEvent(timer: Timer) {
+        self.resultImage.isHidden = !self.resultImage.isHidden
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -65,6 +73,11 @@ class ViewController: UIViewController {
         queen = 0
         jack = 0
         
+        self.firstCard.image = UIImage(named: "backSide")
+        self.secondCard.image = UIImage(named: "backSide")
+        self.thirdCard.image = UIImage(named: "backSide")
+        self.resultImage.image = UIImage(named: "")
+        
     }
     
     @IBAction func spinButtonAction(_ sender: UIButton) {
@@ -73,6 +86,7 @@ class ViewController: UIViewController {
         var firstRandomNumber : Int
         var secondRandomNumber : Int
         var thirdRandomNumber : Int
+        var res : Bool
         
         var fileRes : String
         
@@ -165,74 +179,97 @@ class ViewController: UIViewController {
         if ace == 3 {
             cashValue += 50
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if jack == 3   {
             cashValue += 20
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if queen == 3   {
             cashValue += 30
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if king == 3   {
             cashValue += 40
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if seven == 3 {
             cashValue += 15
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if eight == 3   {
             cashValue += 15
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if nine == 3   {
             cashValue += 15
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if ten == 3   {
             cashValue += 15
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if ace == 2    {
             cashValue += 20
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if jack == 2   {
             cashValue += 5
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if queen == 2   {
             cashValue += 10
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if king == 2   {
             cashValue += 15
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if seven == 2   {
             cashValue += 10
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if ten == 2   {
             cashValue += 10
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if eight == 2   {
             cashValue += 10
             cashLabel.text = String(cashValue)
+            res = true
         }
         else if nine == 2   {
             cashValue += 10
             cashLabel.text = String(cashValue)
+            res = true
         }
         else   {
             cashValue -= 10
             cashLabel.text = String(cashValue)
             jackpotValue += 10
             jackpotLabel.text = String(jackpotValue)
+            res = false
         }
         
+        if res == true  {
+            self.resultImage.image = UIImage(named: "win")
+        }
+        else    {
+             self.resultImage.image = UIImage(named: "lose")
+        }
         print(ace)
         print(jack)
         print(queen)

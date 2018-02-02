@@ -14,7 +14,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlotMachine" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="center" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -34,17 +34,17 @@
                                 <rect key="frame" x="34" y="101" width="165" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CoN-oG-SKm">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backSide" translatesAutoresizingMaskIntoConstraints="NO" id="CoN-oG-SKm">
                                 <rect key="frame" x="18" y="232" width="110" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cn-wk-JRd">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backSide" translatesAutoresizingMaskIntoConstraints="NO" id="6cn-wk-JRd">
                                 <rect key="frame" x="132" y="232" width="110" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ot2-lR-TeW">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backSide" translatesAutoresizingMaskIntoConstraints="NO" id="ot2-lR-TeW">
                                 <rect key="frame" x="246" y="232" width="110" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -88,6 +88,10 @@
                                 <color key="textColor" red="0.94117647058823528" green="0.48627450980392156" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbt-Sk-pFO">
+                                <rect key="frame" x="137" y="173" width="122" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -98,6 +102,7 @@
                         <outlet property="jackpotLabel" destination="Pfd-Di-ow8" id="uUt-Oo-SWP"/>
                         <outlet property="quitButton" destination="FBE-H6-QXS" id="yHp-q2-hhe"/>
                         <outlet property="resetButton" destination="Nym-Ur-Wab" id="C0i-47-PH1"/>
+                        <outlet property="resultImage" destination="hbt-Sk-pFO" id="hfq-Xv-aUO"/>
                         <outlet property="secondCard" destination="6cn-wk-JRd" id="VU7-hx-79H"/>
                         <outlet property="thirdCard" destination="ot2-lR-TeW" id="4lt-v7-DMT"/>
                     </connections>
@@ -108,6 +113,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backSide" width="110" height="160"/>
         <image name="cash" width="165" height="72"/>
         <image name="dollar" width="28" height="58"/>
         <image name="jackpot" width="192" height="60"/>
