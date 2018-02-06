@@ -13,6 +13,7 @@
 		41B3DEBB201BBE3200808153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B3DEBA201BBE3200808153 /* Assets.xcassets */; };
 		41B3DEBE201BBE3200808153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B3DEBC201BBE3200808153 /* LaunchScreen.storyboard */; };
 		41B3DEC9201BBE3200808153 /* SlotMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3DEC8201BBE3200808153 /* SlotMachineTests.swift */; };
+		41F2216B2029546A00ED75F3 /* spin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41F2216A2029546A00ED75F3 /* spin.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		41B3DEC4201BBE3200808153 /* SlotMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlotMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B3DEC8201BBE3200808153 /* SlotMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotMachineTests.swift; sourceTree = "<group>"; };
 		41B3DECA201BBE3200808153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F2216A2029546A00ED75F3 /* spin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = spin.wav; path = "../../../../../../Downloads/iOS-Proj-CasinoGame-master/Casino/Casino/spin.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				41B3DEBA201BBE3200808153 /* Assets.xcassets */,
 				41B3DEBC201BBE3200808153 /* LaunchScreen.storyboard */,
 				41B3DEBF201BBE3200808153 /* Info.plist */,
+				41F2216A2029546A00ED75F3 /* spin.wav */,
 			);
 			path = SlotMachine;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			files = (
 				41B3DEBE201BBE3200808153 /* LaunchScreen.storyboard in Resources */,
 				41B3DEBB201BBE3200808153 /* Assets.xcassets in Resources */,
+				41F2216B2029546A00ED75F3 /* spin.wav in Resources */,
 				41B3DEB9201BBE3200808153 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

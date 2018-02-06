@@ -27,7 +27,6 @@ class ViewController: UIViewController {
     var nineResult = [19,23,27,31]
     var tenResult = [20,24,28,32]
     
-    
     @IBOutlet weak var quitButton: UIButton!
     @IBOutlet weak var jackpotLabel: UILabel!
     @IBOutlet weak var cashLabel: UILabel!
@@ -36,6 +35,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondCard: UIImageView!
     @IBOutlet weak var thirdCard: UIImageView!
     @IBOutlet weak var resultImage: UIImageView!
+    @IBOutlet weak var slotPicker: UIPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         var res : Bool
         
         var fileRes : String
-        
+      
         firstRandomNumber = Int(arc4random_uniform(32) + 1)
         fileRes = String(firstRandomNumber)
         self.firstCard.image = UIImage(named: fileRes)
